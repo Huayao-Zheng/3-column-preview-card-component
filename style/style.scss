@@ -32,10 +32,11 @@ main {
     flex-basis: 19.163rem;
     padding: 5.217391304347826% 5.16304347826087%;
     color: $Very-light-gray;
-    border-radius: 0.5rem;
 
     &:nth-child(1) {
       background: $Bright-orange;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
       button {
         color: $Bright-orange;
       }
@@ -48,6 +49,8 @@ main {
     }
     &:nth-child(3) {
       background: $Very-dark-cyan;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
       button {
         color: $Very-dark-cyan;
       }
@@ -79,6 +82,7 @@ main {
       cursor: pointer;
       font-size: 0.938rem;
       border-radius: 1.563rem;
+      transition: all 0.2s;
 
       &:hover {
         background: transparent;
@@ -103,6 +107,15 @@ footer {
     .card {
       flex-basis: 20.438rem;
       padding: 3rem;
+
+      &:nth-child(1) {
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+      }
+      &:nth-child(3) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+      }
 
       &__car-info {
         margin-bottom: 1.563rem;
