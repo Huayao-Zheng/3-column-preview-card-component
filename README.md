@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Live]()
-- [Solution]()
+- [Live](https://lonelybuddy.github.io/3-column-preview-card-component/)
+- [Solution](https://www.frontendmentor.io/solutions/html-css-andsass-axmUMuUPs)
 
 ### Built with
 

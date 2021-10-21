@@ -19,6 +19,7 @@ body {
   display: grid;
   place-items: center;
   padding: 5.5rem 1.5rem;
+  padding-top: 10.688rem;
   position: relative;
 }
 
@@ -27,6 +28,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   max-width: 57.5rem;
+  padding-top: 1.438rem;
 
   .card {
     flex-basis: 19.163rem;
@@ -97,8 +99,10 @@ footer {
 @media (max-width: 700px) {
   body {
     height: fit-content;
+    padding: 5.5rem 1.5rem;
   }
   main {
+    padding-top: 0;
     .card {
       flex-basis: 20.438rem;
       padding: 3rem;
