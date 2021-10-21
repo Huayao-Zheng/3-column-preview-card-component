@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 5.5rem 1.5rem;
+  position: relative;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 57.5rem;
+}
+
+main .card {
+  -ms-flex-preferred-size: 19.163rem;
+      flex-basis: 19.163rem;
+  padding: 5.217391304347826% 5.16304347826087%;
+  color: #f2f2f2;
+  border-radius: 0.5rem;
+}
+
+main .card:nth-child(1) {
+  background: #e38826;
+}
+
+main .card:nth-child(1) button {
+  color: #e38826;
+}
+
+main .card:nth-child(2) {
+  background: #006970;
+}
+
+main .card:nth-child(2) button {
+  color: #006970;
+}
+
+main .card:nth-child(3) {
+  background: #004241;
+}
+
+main .card:nth-child(3) button {
+  color: #004241;
+}
+
+main .card__car-icon {
+  margin-bottom: 2.188rem;
+}
+
+main .card__car-type {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.563rem;
+}
+
+main .card__car-info {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 5.188rem;
+}
+
+main .card__learn-more-btn {
+  background: #f2f2f2;
+  width: 9.125rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.938rem;
+  border-radius: 1.563rem;
+}
+
+main .card__learn-more-btn:hover {
+  background: transparent;
+  color: #fff !important;
+  border: 2px solid #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .card {
+    -ms-flex-preferred-size: 20.438rem;
+        flex-basis: 20.438rem;
+    padding: 3rem;
+  }
+  main .card__car-info {
+    margin-bottom: 1.563rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

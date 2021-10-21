@@ -1,0 +1,111 @@
+$Very-light-gray: hsl(0, 0%, 95%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background: $Very-light-gray;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 5.5rem 1.5rem;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 57.5rem;
+
+  .card {
+    flex-basis: 19.163rem;
+    padding: 5.217391304347826% 5.16304347826087%;
+    color: $Very-light-gray;
+    border-radius: 0.5rem;
+
+    &:nth-child(1) {
+      background: $Bright-orange;
+      button {
+        color: $Bright-orange;
+      }
+    }
+    &:nth-child(2) {
+      background: $Dark-cyan;
+      button {
+        color: $Dark-cyan;
+      }
+    }
+    &:nth-child(3) {
+      background: $Very-dark-cyan;
+      button {
+        color: $Very-dark-cyan;
+      }
+    }
+
+    &__car-icon {
+      margin-bottom: 2.188rem;
+    }
+
+    &__car-type {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 1.563rem;
+    }
+
+    &__car-info {
+      font-size: 0.938rem;
+      line-height: 1.563rem;
+      color: $Transparent-white;
+      margin-bottom: 5.188rem;
+    }
+
+    &__learn-more-btn {
+      background: $Very-light-gray;
+      width: 9.125rem;
+      height: 3rem;
+      border: none;
+      cursor: pointer;
+      font-size: 0.938rem;
+      border-radius: 1.563rem;
+
+      &:hover {
+        background: transparent;
+        color: #fff !important;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: fit-content;
+  }
+  main {
+    .card {
+      flex-basis: 20.438rem;
+      padding: 3rem;
+
+      &__car-info {
+        margin-bottom: 1.563rem;
+      }
+    }
+  }
+}
