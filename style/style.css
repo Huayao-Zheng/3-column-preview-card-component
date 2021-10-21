@@ -30,7 +30,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 57.5rem;
-  padding-top: 1.438rem;
 }
 
 main .card {
@@ -109,7 +108,6 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 5.5rem 1.5rem;
   }
   main {
     padding-top: 0;
